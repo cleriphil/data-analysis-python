@@ -1,0 +1,27 @@
+
+For Google sheets:
+(alphabetizing column of activities) )
+=SORT($C$4:$C$37, 1, TRUE)
+=SORT(INDIRECT(ADDRESS(4,COLUMN())):$E$37, 1, TRUE)
+=SORT(INDIRECT(ADDRESS(4,COLUMN())):INDIRECT(ADDRESS(37,COLUMN())), 1, TRUE)
+
+
+-----
+
+- separate data in 'activites' section by '|'
+- alphebetize activities arrays
+- find co-occurance in activities arrays
+
+When A occurs, how likely is it for B to occur?
+
+or
+
+How many times does A and B occur together?
+
+
+//python dictionary:
+dataset1 = {'date':'2019-05-11', 'monthDay':'May 11', 'weekday':'Saturday', 'mood': 'okay', 'activities': ['10k+','art','vacation','travel','friends']}
+Activities1 = dataset1['activities']
+
+
+ideas -- check for specific pairs first?
